@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Non Punk Playable Character</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="topbar">
+  <a class="brand" href="#"><span class="logo">NPC</span><span>Non Punk Playable Character</span></a>
+  <button id="topConnect">Connect Wallet</button>
+</header>
+
+<main class="page">
+  <section class="hero">
+    <p class="eyebrow">TOTAL SUPPLY · 10,000</p>
+    <h1>Look at them.<br>They're right here.</h1>
+
+    <div class="preview-card">
+      <img src="https://copper-bitter-dingo-550.mypinata.cloud/ipfs/bafybeibscohztnmyanbel2uyzmgyfg2ymf5unulhu7lneyyzcl6ijd2qxy" alt="Punk NPC hidden gif">
+    </div>
+
+    <div class="mint-panel">
+      <div class="mint-row"><span>MINTED</span><b><span id="mintedText">0</span> / 10000</b></div>
+      <div class="mint-row"><span>PRICE</span><b id="totalPrice">FREE</b></div>
+
+      <div class="counter">
+        <button id="minus" type="button">−</button>
+        <input id="amount" value="1" inputmode="numeric">
+        <button id="plus" type="button">+</button>
+      </div>
+
+      <button id="connectBtn" class="mint-btn" type="button">CONNECT WALLET</button>
+      <button id="mintBtn" class="mint-btn hiddenBtn" type="button">MINT NPC</button>
+
+      <p id="wallet">not connected</p>
+      <p id="status">Insert contract address in app.js</p>
+    </div>
+
+    <nav class="links">
+      <a href="https://opensea.io/" target="_blank">OpenSea</a>
+      <a href="https://x.com/" target="_blank">Twitter</a>
+      <a id="etherscanLink" href="https://etherscan.io/" target="_blank">Etherscan</a>
+    </nav>
+  </section>
+</main>
+
+<div id="walletModal" class="modal hidden">
+  <div class="modal-card">
+    <button id="closeModalBtn" class="close" type="button">×</button>
+    <h3>Connect Wallet</h3>
+    <button id="browserWalletBtn" type="button">MetaMask / Rabby / OKX</button>
+    <button id="walletConnectBtn" type="button">WalletConnect / Mobile</button>
+  </div>
+</div>
+
+<footer>© 2026 · NON PUNK PLAYABLE CHARACTER</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
